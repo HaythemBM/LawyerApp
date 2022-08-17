@@ -1,0 +1,58 @@
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button {
+  margin: 1rem;
+  max-width: 150px;
+}
+
+.update {
+  background-color: #004eea;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: inline;
+}
+
+.update:hover {
+  background-color: #1b6fff;
+  border: 2px solid #0b182c;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #cf2300;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: inline;
+}
+
+.delete:hover {
+  background-color: #e40505;
+  border: 2px solid #300000;
+  cursor: pointer;
+}
