@@ -46,51 +46,52 @@ function GetCases() {
           </Link>
         </div>
       </nav>
-      <h2>{clientName}'s Cases List :</h2>
-
-      {casesList.map((val, key) => {
-        return (
-          <section>
-            <div className="info">
-              <div>
-                <h3>Numéro:</h3>
-                <p>{val.num}</p>
+      <section>
+        <h2>{clientName}'s Cases List :</h2>
+        {casesList.map((val, key) => {
+          return (
+            <div className="item">
+              <div className="info">
+                <div>
+                  <h3>Numéro:</h3>
+                  <p>{val.num}</p>
+                </div>
+                <div>
+                  <h3>Sujet:</h3>
+                  <p>{val.sujet}</p>
+                </div>
+                <div>
+                  <h3>Référence:</h3>
+                  <p>{val.ref}</p>
+                </div>
+                <div>
+                  <h3>Prix:</h3>
+                  <p>{val.prix}</p>
+                </div>
               </div>
-              <div>
-                <h3>Sujet:</h3>
-                <p>{val.sujet}</p>
-              </div>
-              <div>
-                <h3>Référence:</h3>
-                <p>{val.ref}</p>
-              </div>
-              <div>
-                <h3>Prix:</h3>
-                <p>{val.prix}</p>
+              <div className="btn-container">
+                <button
+                  className="update"
+                  onClick={() => {
+                    navigate(`/dossiers/${id}/edit/${val._id}`);
+                  }}
+                >
+                  Modifier
+                </button>
+                <button
+                  className="delete"
+                  onClick={() => {
+                    axios.delete(`${URL}/dossiers/${val._id}`);
+                    refreshPage();
+                  }}
+                >
+                  Supprimer
+                </button>
               </div>
             </div>
-            <div className="btn-container">
-              <button
-                className="update"
-                onClick={() => {
-                  navigate(`/dossiers/${id}/edit/${val._id}`);
-                }}
-              >
-                Modifier
-              </button>
-              <button
-                className="delete"
-                onClick={() => {
-                  axios.delete(`${URL}/dossiers/${val._id}`);
-                  refreshPage();
-                }}
-              >
-                Supprimer
-              </button>
-            </div>
-          </section>
-        );
-      })}
+          );
+        })}
+      </section>
     </main>
   );
 }

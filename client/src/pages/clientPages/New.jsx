@@ -35,66 +35,73 @@ function New() {
   };
 
   return (
-    <div>
+    <main>
       <ClientNavBar />
-      <h1>Ajouter un client</h1>
-      <div className="Form">
-        <label>Nom: </label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setNom(event.target.value);
-          }}
-        />
-        <label>matFisc: </label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setMatFisc(event.target.value);
-          }}
-        />
-        <label>Adresse: </label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setAdresse(event.target.value);
-          }}
-        />
-        <label>Tel: </label>
-        <input
-          type="tel"
-          onChange={(event) => {
-            setTel(event.target.value);
-          }}
-        />
-        <label>Email: </label>
-        <input
-          type="email"
-          onChange={(event) => {
-            setEmail(event.target.value);
-          }}
-        />
-        <div className="btn-container">
-          <button
-            className="update"
-            onClick={() => {
-              AddClient();
-              navigate("/clients");
+      <section>
+        <h1 className="title">Ajouter un client</h1>
+        <div className="Form">
+          <label>Nom: </label>
+          <input
+            className="input"
+            type="text"
+            onChange={(event) => {
+              setNom(event.target.value);
             }}
-          >
-            Add
-          </button>
-          <button
-            className="delete"
-            onClick={() => {
-              navigate("/clients");
+          />
+          <label>matFisc: </label>
+          <input
+            className="input"
+            type="text"
+            onChange={(event) => {
+              setMatFisc(event.target.value);
             }}
-          >
-            Return
-          </button>
+          />
+          <label>Adresse: </label>
+          <input
+            className="input"
+            type="text"
+            onChange={(event) => {
+              setAdresse(event.target.value);
+            }}
+          />
+          <label>Tel: </label>
+          <input
+            className="input"
+            type="tel"
+            onChange={(event) => {
+              setTel(event.target.value);
+            }}
+          />
+          <label>Email: </label>
+          <input
+            className="input"
+            type="email"
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
+          />
+          <div className="btn-container">
+            <button
+              className="update"
+              onClick={() => {
+                AddClient();
+                navigate("/clients");
+              }}
+            >
+              Add
+            </button>
+            <button
+              className="delete"
+              onClick={() => {
+                navigate("/clients");
+              }}
+            >
+              Return
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

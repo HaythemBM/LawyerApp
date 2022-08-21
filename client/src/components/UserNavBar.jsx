@@ -4,7 +4,12 @@ import "./NavBar.css";
 function UserNavBar() {
   return (
     <nav className="NavBar-Wrapper">
-      <div>
+      <div className="NavBar-Home">
+        <img
+          src="/client/src/components/balance.png"
+          alt=""
+          className="NavBar-Icon"
+        />
         <h3 className="NavBar-Title">Lawyer App</h3>
       </div>
       <div className="NavBar-Links">

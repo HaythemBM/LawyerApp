@@ -1,6 +1,38 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.NavBar-Wrapper {
+  width: 100%;
+}
+
 section {
+  width: 50%;
+  margin: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  font-size: 400%;
+  background-color: #d9af62;
+  border: 3px solid #734226;
+  color: #040d0c;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+section:hover {
+  transform: translateY(5px);
+}
+
+section h1 {
+  font-size: 175%;
+}
+section h3 {
+  font-size: 140%;
+  text-transform: italic;
 }

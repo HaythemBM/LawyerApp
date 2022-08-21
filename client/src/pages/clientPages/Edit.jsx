@@ -50,72 +50,79 @@ function Edit(props) {
   };
 
   return (
-    <div>
+    <main>
       <ClientNavBar />
-      <h1>Modifier un client</h1>
-      <div className="Form">
-        <label>Nom: </label>
-        <input
-          type="text"
-          defaultValue={nom}
-          onChange={(event) => {
-            setNom(event.target.value);
-          }}
-        />
-        <label>matFisc: </label>
-        <input
-          type="text"
-          defaultValue={matFisc}
-          onChange={(event) => {
-            setMatFisc(event.target.value);
-          }}
-        />
-        <label>Adresse: </label>
-        <input
-          type="text"
-          defaultValue={adresse}
-          onChange={(event) => {
-            setAdresse(event.target.value);
-          }}
-        />
-        <label>Tel: </label>
-        <input
-          type="tel"
-          defaultValue={tel}
-          onChange={(event) => {
-            setTel(event.target.value);
-          }}
-        />
-        <label>Email: </label>
-        <input
-          type="email"
-          defaultValue={email}
-          onChange={(event) => {
-            setEmail(event.target.value);
-          }}
-        />
-        <div className="btn-container">
-          <button
-            className="update"
-            onClick={() => {
-              UpdateClient();
-              navigate("/clients");
-              refreshPage();
+      <section>
+        <h1 className="title">Modifier un client</h1>
+        <div className="Form">
+          <label>Nom: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={nom}
+            onChange={(event) => {
+              setNom(event.target.value);
             }}
-          >
-            Update
-          </button>
-          <button
-            className="delete"
-            onClick={() => {
-              navigate("/clients");
+          />
+          <label>matFisc: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={matFisc}
+            onChange={(event) => {
+              setMatFisc(event.target.value);
             }}
-          >
-            Return
-          </button>
+          />
+          <label>Adresse: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={adresse}
+            onChange={(event) => {
+              setAdresse(event.target.value);
+            }}
+          />
+          <label>Tel: </label>
+          <input
+            className="input"
+            type="tel"
+            defaultValue={tel}
+            onChange={(event) => {
+              setTel(event.target.value);
+            }}
+          />
+          <label>Email: </label>
+          <input
+            className="input"
+            type="email"
+            defaultValue={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
+          />
+          <div className="btn-container">
+            <button
+              className="update"
+              onClick={() => {
+                UpdateClient();
+                navigate("/clients");
+                refreshPage();
+              }}
+            >
+              Update
+            </button>
+            <button
+              className="delete"
+              onClick={() => {
+                navigate("/clients");
+              }}
+            >
+              Return
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

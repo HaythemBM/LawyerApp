@@ -5,7 +5,7 @@ import "./Home.css";
 function Home() {
   return (
     <main>
-      <UserNavBar />
+      <UserNavBar className="nav" />
       <section>
         <h1>Welcome to Lawyer App</h1>
         <h3>Login Or Register and enjoy our services !!!</h3>

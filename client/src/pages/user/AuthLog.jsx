@@ -23,32 +23,36 @@ function AuthLog() {
   return (
     <main>
       <UserNavBar />
-      <h1>Log In</h1>
-      <div className="Form">
-        <label>Email: </label>
-        <input
-          type="email"
-          onChange={(event) => {
-            setEmail(event.target.value);
-          }}
-        />
-        <label>Password: </label>
-        <input
-          type="password"
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
-        <button
-          className="success"
-          onClick={() => {
-            LogIn();
-            navigate("/clients");
-          }}
-        >
-          Log in
-        </button>
-      </div>
+      <section>
+        <h1>Log In</h1>
+        <div className="Form">
+          <label>Email: </label>
+          <input
+            className="input"
+            type="email"
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
+          />
+          <label>Password: </label>
+          <input
+            className="input"
+            type="password"
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+          />
+          <button
+            className="success"
+            onClick={() => {
+              LogIn();
+              navigate("/clients");
+            }}
+          >
+            Log in
+          </button>
+        </div>
+      </section>
     </main>
   );
 }

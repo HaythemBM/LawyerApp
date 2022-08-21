@@ -44,64 +44,70 @@ function EditFolder() {
   };
 
   return (
-    <div>
+    <main>
       <CasesNavBar />
-      <h1>Modifier un dossier</h1>
-      <div className="Form">
-        <label>Num: </label>
-        <input
-          type="text"
-          defaultValue={num}
-          onChange={(event) => {
-            setNum(event.target.value);
-          }}
-        />
-        <label>sujet: </label>
-        <input
-          type="text"
-          defaultValue={sujet}
-          onChange={(event) => {
-            setSujet(event.target.value);
-          }}
-        />
-        <label>ref: </label>
-        <input
-          type="text"
-          defaultValue={ref}
-          onChange={(event) => {
-            setRef(event.target.value);
-          }}
-        />
-        <label>prix: </label>
-        <input
-          type="prix"
-          defaultValue={prix}
-          onChange={(event) => {
-            setPrix(event.target.value);
-          }}
-        />
-        <div className="btn-container">
-          <button
-            className="update"
-            onClick={() => {
-              UpdateClient();
-              navigate(`/dossiers/${id}`);
-              refreshPage();
+      <section>
+        <h1 className="tilte">Modifier un dossier</h1>
+        <div className="Form">
+          <label>Num: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={num}
+            onChange={(event) => {
+              setNum(event.target.value);
             }}
-          >
-            Update
-          </button>
-          <button
-            className="delete"
-            onClick={() => {
-              navigate(`/dossiers/${id}`);
+          />
+          <label>sujet: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={sujet}
+            onChange={(event) => {
+              setSujet(event.target.value);
             }}
-          >
-            Return
-          </button>
+          />
+          <label>ref: </label>
+          <input
+            className="input"
+            type="text"
+            defaultValue={ref}
+            onChange={(event) => {
+              setRef(event.target.value);
+            }}
+          />
+          <label>prix: </label>
+          <input
+            className="input"
+            type="prix"
+            defaultValue={prix}
+            onChange={(event) => {
+              setPrix(event.target.value);
+            }}
+          />
+          <div className="btn-container">
+            <button
+              className="update"
+              onClick={() => {
+                UpdateClient();
+                navigate(`/dossiers/${id}`);
+                refreshPage();
+              }}
+            >
+              Update
+            </button>
+            <button
+              className="delete"
+              onClick={() => {
+                navigate(`/dossiers/${id}`);
+              }}
+            >
+              Return
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
