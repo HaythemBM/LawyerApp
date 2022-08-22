@@ -24,7 +24,7 @@ h2 {
 }
 
 .item {
-  width: 85%;
+  width: 95%;
   height: 300px;
   margin: 10px;
   padding: 5px;
@@ -55,9 +55,8 @@ h2 {
 }
 
 .info div {
-  height: 80%;
-  padding: 5px;
-  /* background-color: #d9af62; */
+  height: 90%;
+  margin: 10px;
   border-radius: 20px;
   display: flex;
   align-items: center;
