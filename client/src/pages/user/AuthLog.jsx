@@ -42,15 +42,26 @@ function AuthLog() {
               setPassword(event.target.value);
             }}
           />
-          <button
-            className="success"
-            onClick={() => {
-              LogIn();
-              navigate("/clients");
-            }}
-          >
-            Log in
-          </button>
+          <div className="btn-container">
+            {" "}
+            <button
+              className="success"
+              onClick={() => {
+                LogIn();
+                navigate("/clients");
+              }}
+            >
+              Log in
+            </button>
+            <button
+              className="delete"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Return
+            </button>
+          </div>
         </div>
       </section>
     </main>

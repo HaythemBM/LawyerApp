@@ -12,6 +12,10 @@
   padding-left: 1rem;
 }
 
+.NavBar-Title:hover {
+  cursor: pointer;
+}
+
 .NavBar-Link {
   text-decoration: none;
   padding: 0.8rem;

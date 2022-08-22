@@ -56,16 +56,26 @@ function AuthReg() {
               setPassword(event.target.value);
             }}
           />
-          <button
-            className="success"
-            onClick={() => {
-              AddToList();
-              navigate("/clients");
-              refreshPage();
-            }}
-          >
-            Add User
-          </button>
+          <div className="btn-container">
+            <button
+              className="success"
+              onClick={() => {
+                AddToList();
+                navigate("/clients");
+                refreshPage();
+              }}
+            >
+              Add User
+            </button>
+            <button
+              className="delete"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Return
+            </button>
+          </div>
         </div>
       </section>
     </main>
