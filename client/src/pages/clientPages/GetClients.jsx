@@ -79,6 +79,14 @@ function GetClients() {
                   Modifier
                 </button>
                 <button
+                  className="bill"
+                  onClick={() => {
+                    navigate(`/clients/edit/${val._id}`);
+                  }}
+                >
+                  Générer Facture
+                </button>
+                <button
                   className="delete"
                   onClick={() => {
                     axios.delete(`${URL}/clients/${val._id}`);
