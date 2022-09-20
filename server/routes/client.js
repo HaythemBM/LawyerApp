@@ -38,6 +38,14 @@ router.post("/", jsonParser, async (req, res) => {
   console.log(newClient);
 });
 
+//Tirez un client d'id spécifique
+router.get("/lookfor/:id", async (req, res) => {
+  const { id } = req.params;
+  const client = await Client.findById(id);
+  console.log(client);
+  res.send(client);
+});
+
 // Tirez un client d'id spécifique
 router.get("/:idu/:id", async (req, res) => {
   const { id } = req.params;

@@ -8,7 +8,6 @@ import "../Form.css";
 const URL = "http://localhost:5000";
 
 function Edit(props) {
-  //   const [client, setClient] = useState({});
   const [nom, setNom] = useState("");
   const [matFisc, setMatFisc] = useState("");
   const [adresse, setAdresse] = useState("");

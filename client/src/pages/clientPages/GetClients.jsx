@@ -81,7 +81,7 @@ function GetClients() {
                 <button
                   className="bill"
                   onClick={() => {
-                    navigate(`/clients/edit/${val._id}`);
+                    navigate(`/clients/bill/${val._id}`);
                   }}
                 >
                   Générer Facture
