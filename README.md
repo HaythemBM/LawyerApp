@@ -42,6 +42,6 @@ Contributions to this project are welcome! If you'd like to contribute, please f
 
 ## Contact
 
-For any questions or inquiries, please contact our team at [haythem.benmessaoud@ensi-uma.tn](mailto:haythem.benmessaoud@ensi-uma.tn).
+For any questions or inquiries, please contact me at [haythem.benmessaoud@ensi-uma.tn](mailto:haythem.benmessaoud@ensi-uma.tn).
 
-Thank you for using the Attorney Invoice Management Website! We hope this platform simplifies your invoice management processes and enhances your overall efficiency.
+Thank you for using the Attorney Invoice Management Website! I hope this platform simplifies your invoice management processes and enhances your overall efficiency.
