@@ -20,8 +20,6 @@ The Attorney Invoice Management website is a comprehensive MERN stack web-based 
 
 - **Security**: Data security is a top priority, with robust measures in place to protect sensitive client and financial information.
 
-Certainly, here's the modified "Getting Started" section with the correct ports:
-
 ## Getting Started
 
 To get started with the Attorney Invoice Management website, follow these steps:
