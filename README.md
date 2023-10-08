@@ -34,10 +34,6 @@ To get started with the Attorney Invoice Management website, follow these steps:
 
 5. **Start the Development Client**: In a separate terminal, navigate to the client folder and run `npm start` to start the development client. The client will listen on port 3000.
 
-## Contributing
-
-Contributions to this project are welcome! If you'd like to contribute, please follow our [contributing guidelines](CONTRIBUTING.md).
-
 ## Contact
 
 For any questions or inquiries, please contact me at [haythem.benmessaoud@ensi-uma.tn](mailto:haythem.benmessaoud@ensi-uma.tn).
